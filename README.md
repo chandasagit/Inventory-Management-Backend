@@ -23,7 +23,7 @@ backend/
 │ ├── server.js # Express server entry point
 │ ├── db.js # SQL Server connection
 │ ├── routes/
-│ │ └── products.js # Product CRUD routes
+│ │ └── items.js # Product CRUD routes
 │── .env # Environment variables
 │── package.json
 </pre>
