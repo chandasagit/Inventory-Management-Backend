@@ -4,19 +4,19 @@ A simple **Inventory Management System backend** built with **Node.js, Express, 
 This project demonstrates database connectivity, environment configuration, and RESTful CRUD APIs.
 
 ## ✨ Features  
-- 🔗 **Connects to SQL Server** using `mssql` library.  
-- 📂 **CRUD APIs** for managing inventory items.  
-- ⚙️ **Environment configuration** with `.env` file.  
-- ✅ Tested with **Postman / curl**.  
-- 📊 Example table: `Products` with sample data.  
+- **Connects to SQL Server** using `mssql` library.  
+- **CRUD APIs** for managing inventory items.  
+- **Environment configuration** with `.env` file.  
+- Tested with **Postman / curl**.  
+- Example table: `Products` with sample data.  
 
-## 🛠️ Tech Stack  
+## Tech Stack  
 - **Backend:** Node.js, Express  
 - **Database:** SQL Server  
 - **ORM/Driver:** `mssql`  
 - **Environment:** dotenv
 
-## 📂 Project Structure  
+## Project Structure  
 <pre>
 backend/
 │── src/
@@ -28,10 +28,10 @@ backend/
 │── package.json
 </pre>
 
-#Install dependencies
+##Install dependencies
 <pre>npm install</pre>
 
-#Configure environment
+##Configure environment
 Create a .env file in backend/ with:
 <pre>
 DB_USER=your_username
@@ -42,7 +42,7 @@ DB_PORT=1433
 PORT=5000
 </pre>
 
-#Create SQL Server Database
+##Create SQL Server Database
 <pre>
 Run this inside sqlcmd or SSMS:
 CREATE DATABASE InventoryDB;
@@ -67,23 +67,23 @@ VALUES
 GO
 </pre>
 
-#Start the server
+##Start the server
 <pre>node src/server.js</pre>
 
-#Get all products
+##Get all products
 <pre>curl http://localhost:5000/api/products</pre>
 
-#Add a new product
+##Add a new product
 <pre>
   curl -X POST http://localhost:5000/api/products \
   -H "Content-Type: application/json" \
   -d '{"name":"Monitor","quantity":5,"price":12000}'
 </pre>
 
-#Future Improvements
-Add frontend (React/Next.js) for UI.
-Implement authentication (JWT).
-Deploy with Docker / Render / Azure.
-Add API documentation with Swagger.
+##Future Improvements
+- Add frontend (React/Next.js) for UI.
+- Implement authentication (JWT).
+- Deploy with Docker / Render / Azure.
+- Add API documentation with Swagger.
 
 
