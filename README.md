@@ -28,10 +28,10 @@ backend/
 │── package.json
 </pre>
 
-##Install dependencies
+## Install dependencies
 <pre>npm install</pre>
 
-##Configure environment
+## Configure environment
 Create a .env file in backend/ with:
 <pre>
 DB_USER=your_username
@@ -42,7 +42,7 @@ DB_PORT=1433
 PORT=5000
 </pre>
 
-##Create SQL Server Database
+## Create SQL Server Database
 <pre>
 Run this inside sqlcmd or SSMS:
 CREATE DATABASE InventoryDB;
@@ -67,20 +67,20 @@ VALUES
 GO
 </pre>
 
-##Start the server
+## Start the server
 <pre>node src/server.js</pre>
 
-##Get all products
+## Get all products
 <pre>curl http://localhost:5000/api/products</pre>
 
-##Add a new product
+## Add a new product
 <pre>
   curl -X POST http://localhost:5000/api/products \
   -H "Content-Type: application/json" \
   -d '{"name":"Monitor","quantity":5,"price":12000}'
 </pre>
 
-##Future Improvements
+## Future Improvements
 - Add frontend (React/Next.js) for UI.
 - Implement authentication (JWT).
 - Deploy with Docker / Render / Azure.
