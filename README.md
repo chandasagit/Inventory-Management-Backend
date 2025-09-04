@@ -3,7 +3,7 @@
 A simple **Inventory Management System backend** built with **Node.js, Express, and SQL Server**.  
 This project demonstrates database connectivity, environment configuration, and RESTful CRUD APIs.
 
-## ✨ Features  
+##  Features  
 - **Connects to SQL Server** using `mssql` library.  
 - **CRUD APIs** for managing inventory items.  
 - **Environment configuration** with `.env` file.  
